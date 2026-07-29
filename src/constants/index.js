@@ -12,5 +12,6 @@ export const ROUTES = {
   DASHBOARD: "/dashboard",
   AVAILABILITY: "/dashboard/availability",
   BOOKING_LINKS: "/dashboard/booking-links",
-  BOOK: "/book/:slug",
+  BOOK: "/book/:code",
+  BOOKING_CONFIRMED: "/booking-confirmed",
 };

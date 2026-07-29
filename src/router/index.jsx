@@ -8,8 +8,12 @@ import Register from "../pages/auth/Register";
 
 // Dashboard pages
 import Dashboard from "../pages/dashboard/Dashboard";
-import BookingLinks from "../pages/bookingLink/BookingLinks";
 import Availability from "../pages/availability/Availability";
+import BookingLinks from "../pages/bookingLink/BookingLinks";
+
+// Public booking pages
+import BookingPage from "../pages/booking/BookingPage";
+import BookingConfirmed from "../pages/booking/BookingConfirmed";
 
 // Protected route — redirects to login if not authenticated
 function ProtectedRoute({ children }) {
@@ -31,6 +35,10 @@ function AppRouter() {
       {/* Public auth routes */}
       <Route path={ROUTES.LOGIN} element={<PublicRoute><Login /></PublicRoute>} />
       <Route path={ROUTES.REGISTER} element={<PublicRoute><Register /></PublicRoute>} />
+
+      {/* Public booking routes — no login required */}
+      <Route path={ROUTES.BOOK} element={<BookingPage />} />
+      <Route path={ROUTES.BOOKING_CONFIRMED} element={<BookingConfirmed />} />
 
       {/* Protected dashboard routes */}
       <Route path={ROUTES.DASHBOARD} element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
