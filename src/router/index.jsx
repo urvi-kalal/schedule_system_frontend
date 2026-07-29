@@ -8,6 +8,7 @@ import Register from "../pages/auth/Register";
 
 // Dashboard pages
 import Dashboard from "../pages/dashboard/Dashboard";
+import BookingLinks from "../pages/bookingLink/BookingLinks";
 import Availability from "../pages/availability/Availability";
 
 // Protected route — redirects to login if not authenticated
@@ -34,6 +35,7 @@ function AppRouter() {
       {/* Protected dashboard routes */}
       <Route path={ROUTES.DASHBOARD} element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
       <Route path={ROUTES.AVAILABILITY} element={<ProtectedRoute><Availability /></ProtectedRoute>} />
+      <Route path={ROUTES.BOOKING_LINKS} element={<ProtectedRoute><BookingLinks /></ProtectedRoute>} />
 
       {/* Default + catch-all */}
       <Route path="/" element={<Navigate to={ROUTES.LOGIN} replace />} />
