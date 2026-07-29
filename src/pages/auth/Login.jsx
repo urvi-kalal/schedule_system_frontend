@@ -63,7 +63,7 @@ function Login() {
             className="form-input"
             type="password"
             name="password"
-            placeholder="Your password"
+            placeholder="••••••••"
             value={form.password}
             onChange={handleChange}
             required

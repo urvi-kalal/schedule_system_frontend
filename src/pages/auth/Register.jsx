@@ -73,11 +73,14 @@ function Register() {
             className="form-input"
             type="password"
             name="password"
-            placeholder="Min. 6 characters"
+            placeholder="••••••••"
             value={form.password}
             onChange={handleChange}
             required
           />
+          <span className={styles.passwordHint}>
+            Must be at least 8 characters and include uppercase, lowercase, numbers, and symbols.
+          </span>
         </div>
 
         {error && <p className="error-msg">⚠ {error}</p>}

@@ -27,3 +27,10 @@
   font-size: 0.875rem;
   color: var(--color-text-muted);
 }
+
+.passwordHint {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+  line-height: 1.3;
+}
