@@ -1,0 +1,72 @@
+.page {
+  max-width: 640px;
+}
+
+.header {
+  margin-bottom: 1.75rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.sub {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.timeRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.successMsg {
+  color: var(--color-success);
+  font-size: 0.85rem;
+}
+
+/* ---- Slot List ---- */
+.slotList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.listTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.slotItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.875rem 1rem;
+}
+
+.slotDate {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.slotTime {
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  font-weight: 500;
+}
